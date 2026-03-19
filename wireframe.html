@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alo Wireframe (Figure 5.35 Style) - Kennedy Scharfman</title>
+
+<style>
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#fff;
+    margin:0;
+    padding:0;
+  }
+
+  .page{
+    width: 950px;
+    max-width: 95%;
+    margin: 28px auto;
+    border: 3px solid #1e1e1e;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .header-box{
+    border: 2px solid #1e1e1e;
+    padding: 10px 12px 0 12px;
+    box-sizing: border-box;
+  }
+
+  .header-title{
+    text-align:center;
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+  }
+
+  .logo{
+    display:block;
+    margin: 0 auto 10px auto;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  .nav{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 2px solid #1e1e1e;
+  }
+
+  .nav div{
+    text-align:center;
+    padding: 8px 0;
+    font-size: 14px;
+    border-right: 2px solid #1e1e1e;
+  }
+
+  .nav div:last-child{
+    border-right:none;
+  }
+
+  .hero{
+    border-top: 2px solid #1e1e1e;
+    padding: 10px 0 0 0;
+  }
+
+  .hero img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border: 2px solid #1e1e1e;
+    display:block;
+  }
+
+  .content-box{
+    border: 2px solid #1e1e1e;
+    border-top: none;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .columns{
+    display: grid;
+    grid-template-columns: 1.2fr 1.6fr 1fr;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .col{
+    border: 2px solid #1e1e1e;
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 210px;
+  }
+
+  h2{
+    margin: 0 0 6px 0;
+    font-size: 18px;
+  }
+
+  h3{
+    margin: 10px 0 6px 0;
+    font-size: 14px;
+  }
+
+  p, li{
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  ul{
+    margin: 0 0 0 18px;
+    padding: 0;
+  }
+
+  .thumb{
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border: 2px solid #1e1e1e;
+  }
+
+  .main-image{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: 2px solid #1e1e1e;
+    display:block;
+    margin-bottom: 8px;
+  }
+
+  .footer{
+    border: 2px solid #1e1e1e;
+    margin-top: 12px;
+    text-align:center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 0;
+  }
+
+  .footer-links{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 6px;
+  }
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <div class="header-box">
+
+    <div class="header-title">Alo</div>
+
+    <!-- LOGO -->
+    <img src="Alo-logo.jpg" alt="Alo Yoga logo" class="logo">
+
+    <!-- NAV -->
+    <div class="nav">
+      <div>New Arrivals</div>
+      <div>Women</div>
+      <div>Men</div>
+      <div>Collections</div>
+      <div>Sale</div>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <div class="hero">
+      <img src="Anthracite.jpg" alt="Alo apparel in Anthracite color">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content-box">
+      <div class="columns">
+
+        <!-- LEFT COLUMN -->
+        <div class="col">
+          <h2>About Alo</h2>
+
+          <p>
+            Alo is a premium activewear brand focused on combining performance, comfort, and style. 
+            Their collections are designed for both workouts and everyday wear.
+          </p>
+
+          <h3>Featured Color</h3>
+
+          <div style="display:flex; gap:10px; align-items:flex-start; margin-bottom:10px;">
+            <img src="Candy Heart Pink.jpg" class="thumb" alt="Candy Heart Pink activewear">
+            <p style="margin:0;">
+              The Candy Heart Pink collection brings a soft, vibrant energy to activewear, 
+              offering a stylish and feminine look.
+            </p>
+          </div>
+
+          <ul>
+            <li>Soft performance fabrics</li>
+            <li>On-trend color palettes</li>
+            <li>Everyday comfort + style</li>
+          </ul>
+        </div>
+
+        <!-- MIDDLE COLUMN -->
+        <div class="col">
+          <img src="Green Olive.jpg" class="main-image" alt="Green Olive activewear set">
+
+          <h3>Signature Styles</h3>
+          <p>
+            Alo offers versatile styles like this Green Olive set, combining neutral tones 
+            with elevated athletic design for both studio and street wear.
+          </p>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col">
+          <h3>Trending Colors</h3>
+          <p>Explore popular shades like Anthracite, Green Olive, and seasonal color drops.</p>
+
+          <h3>New Collections</h3>
+          <p>Fresh releases designed with performance and minimal style in mind.</p>
+
+          <h3>Best Sellers</h3>
+          <p>Top-rated pieces loved for comfort, durability, and sleek design.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Footer
+    <div class="footer-links">
+      © Alo Yoga | Privacy | Terms | Contact |
+      <a href="index.html">Back to Home</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
